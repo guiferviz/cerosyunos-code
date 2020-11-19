@@ -12,9 +12,9 @@ def generate_sample(n):
     print(" ".join(map(str, a)))
 
 def main():
-    if len(sys.argv) == 2:
-        n = int(sys.argv[0])
-        random.seed(int(sys.argv[1]))
+    if len(sys.argv) == 3:
+        n = int(sys.argv[1])
+        random.seed(int(sys.argv[2]))
         t = 1
     else:
         t = random.randint(1, 100)

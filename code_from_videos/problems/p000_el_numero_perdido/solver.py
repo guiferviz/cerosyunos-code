@@ -48,11 +48,12 @@ def solve_arithmetic_progression(n, numbers):
 
 
 def solve_inplace_sort(n, numbers):
-    """Solución bonus :)
+    """Bonus track :)
 
     Tiempo: n.
     Espacio: 1.
     """
+
     numbers.append(-1)
     i = 0
     while i < n:
@@ -79,9 +80,10 @@ def main():
     t = int(input())
     for _ in range(t):
         n, numbers = read_input()
-        #missing_number = solve_counting_sort(n, numbers)
         #missing_number = solve_comparison_sort(n, numbers)
+        #missing_number = solve_counting_sort(n, numbers)
         missing_number = solve_arithmetic_progression(n, numbers)
+        #missing_number = solve_inplace_sort(n, numbers)
         print(missing_number)
 
 
