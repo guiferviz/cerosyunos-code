@@ -1,1 +1,1 @@
-oj test -c "python main.py"
+oj test -c "python main.py" $@

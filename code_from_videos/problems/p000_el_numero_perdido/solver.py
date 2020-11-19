@@ -27,9 +27,10 @@ def solve_comparison_sort(n, numbers):
 
     numbers = sorted(numbers)
 
-    for i, j in zip(range(1, n+1), numbers):
-        if i != j:
-            return i
+    for i, j in enumerate(numbers):
+        if i + 1 != j:
+            return i + 1
+    return n
 
 
 def solve_arithmetic_progression(n, numbers):
@@ -44,6 +45,27 @@ def solve_arithmetic_progression(n, numbers):
 
     missing_number = expected_sum - actual_sum
     return missing_number
+
+
+def solve_inplace_sort(n, numbers):
+    """Solución bonus :)
+
+    Tiempo: n.
+    Espacio: 1.
+    """
+    numbers.append(-1)
+    i = 0
+    while i < n:
+        c = numbers[i]
+        while c > 0 and numbers[c - 1] > 0:
+            c_prev = c
+            c = numbers[c - 1]
+            numbers[c_prev - 1] = 0
+        i += 1
+
+    for i, j in enumerate(numbers):
+        if j != 0:
+            return i + 1
 
 
 def read_input():
