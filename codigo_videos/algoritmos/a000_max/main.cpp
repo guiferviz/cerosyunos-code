@@ -12,6 +12,17 @@ int solve(int n, vector<int> a) {
     }
     return max;
 }
+
+
+int solve_another_implementation(int n, vector<int> a) {
+    int max = a[--n];
+    while (n--) {
+        if (a[n] > max) {
+            max = a[n];
+        }
+    }
+    return max;
+}
  
 
 int main() {
