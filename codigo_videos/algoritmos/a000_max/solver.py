@@ -3,8 +3,9 @@ def solve_python_buildin(n, numbers):
 
 
 def solve_custom_implementation(n, numbers):
-    max_so_far = numbers[0]
+    assert numbers
 
+    max_so_far = numbers[0]
     for i in numbers[1:]:
         if i > max_so_far:
             max_so_far = i
@@ -23,7 +24,7 @@ def main():
     t = int(input())
     for _ in range(t):
         n, numbers = read_input()
-        max_number = solve_python_buildin(n, numbers)
+        max_number = solve_custom_implementation(n, numbers)
         print(max_number)
 
 
