@@ -102,5 +102,29 @@ generate.sh  generator.py  main.cpp  main.py  README.md  run.sh  solver.cpp  sol
 Aunque no todos los algoritmos/problemas tendrán exactamente la misma
 estructura, si que serán bastante similares a este.
 
-En primer lugar tenemos un `README.md` que contiene el enunciado del problema.
+* En primer lugar tenemos un `README.md` que contiene el enunciado del problema.
+* La carpeta `test/` contiene los ficheros de entrada y salida de los tests.
+* Los ficheros `solver.*` contienen la solución vista en el vídeo.
+La extensión depende del lenguaje de programación.
+En general cada problema está resuelto en un par de lenguajes.
+* Los ficheros `main.*` son los que debes editar tú.
+De nuevo, la extensión indica el lenguaje en cuestión.
+La lectura de los datos de entrada está ya hecha, un comentario en el código
+señala la función que debes completar.
+* Un fichero `Makefile` con los siguientes targets:
+  * `make generate`.
+Algunos test están escritos a mano y otros son aleatorios.
+El target `generate` utiliza `oj` y `generator.py` para crear ficheros de tests.
+Editando este target puedes cambiar el número de test generados y la complejidad
+de cada uno de ellos (el número de elementos de entrada, por ejemplo).
+  * `make <extension>`.
+Si quieres probar un fichero de Python debes ejecutar `make py`.
+Este comando utiliza `oj` para ejecutar todos los tests.
+Cuando uses otro lenguaje de programación que no esté ya definido en el
+`Makefile` deberás crear tu propio target basándote en los existentes.
+  * `make clean`.
+Si lo necesitas, este comando borrará los tests generados automáticamente y
+dejará solo aquellos creados manualmente.
+También puedes usar este target para borrar los ficheros resultantes de una
+compilación (si el lenguaje que estás usando es compilado :).
 
