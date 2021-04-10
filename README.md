@@ -33,10 +33,10 @@ Debe haber algún botón llamado *Descargar ZIP* por algún sitio :)
 De todas formas las instrucciones de este README están escritas pensando que
 tienes acceso a una terminal que corre un sistema operativo de kernel Linux.
 Si deseas instalar todas estas herramientas en Windows y sin usar la terminal
-deberás de buscar alternativas a estos comandos.
+deberás de buscar alternativas a alguno de estos comandos.
 
 
-### Instalar Online Judge
+### Instalar Python 3 y Pip
 
 Tu misión será implementar el algoritmo pero, ¿quién se va a encargar de probar
 que tu implementación es correcta?
@@ -62,15 +62,21 @@ sudo apt-get update
 sudo apt-get install python3-pip
 ```
 
-Según la página del proyecto Online Judge en GitHub, para instalarlo tienes que
-ejecutar:
 
-```sh
-pip3 install online-judge-tools
+### Instalar dependencias de Python
+
+Desde tu terminal navega al directorio en el que has clonado el código y
+ejecuta lo siguiente:
+
+```
+pip install -r requirements.txt
 ```
 
-Tras la instalación deberías ser capaz de ejecutar `oj` en tu terminal y obtener
-una salida que empieza como la siguiente:
+Con esto se instalará el Online Judge y otras dependencias necesarias para
+generar los tests.
+
+Para comprobar que la instalación ha sido correcta puedes probar a ejecutar
+`oj` y deberías obtener una salida que empieza como la siguiente:
 
 ```
 $ oj
@@ -84,8 +90,18 @@ Tools for online judge services
 .
 ```
 
-Si has obtenido algo similar genial, ya estás listo para empezar a probar tus
-programas.
+
+### Instalar make
+
+Para facilitar la generación y ejecución de tests se proporciona un `Makefile`
+por cada ejercicio.
+Es conveniente que tengas `make` instalado.
+De nuevo, para instalarlo en una distribución GNU Linux basada en Ubuntu puedes
+utilizar el siguiente comando:
+
+```
+sudo apt-get install make
+```
 
 
 ### Ejecutar tests
@@ -96,14 +112,18 @@ en él.
 ```
 $ cd algoritmos/a000_max/
 $ ls
-generate.sh  generator.py  main.cpp  main.py  README.md  run.sh  solver.cpp  solver.py  test
+generate.sh  generator.py  main.cpp  main.py  README.md  run.sh  solver.cpp  solver.py  tests
 ```
 
 Aunque no todos los algoritmos/problemas tendrán exactamente la misma
 estructura, si que serán bastante similares a este.
 
 * En primer lugar tenemos un `README.md` que contiene el enunciado del problema.
-* La carpeta `test/` contiene los ficheros de entrada y salida de los tests.
+Este fichero puede contener fórmulas LaTeX que no se renderizan en un README en
+GitHub.
+Si tienes algún visualizador de Markdown quizás te proporcione una mejor
+experiencia de lectura.
+* La carpeta `tests/` contiene los ficheros de entrada y salida de los tests.
 * Los ficheros `solver.*` contienen la solución vista en el vídeo.
 La extensión depende del lenguaje de programación.
 En general cada problema está resuelto en un par de lenguajes.
@@ -112,9 +132,9 @@ De nuevo, la extensión indica el lenguaje en cuestión.
 La lectura de los datos de entrada está ya hecha, un comentario en el código
 señala la función que debes completar.
 * Un fichero `Makefile` con los siguientes targets:
-  * `make generate`.
+  * `make tests`.
 Algunos test están escritos a mano y otros son aleatorios.
-El target `generate` utiliza `oj` y `generator.py` para crear ficheros de tests.
+El target `tests` utiliza `oj` y `generator.py` para crear ficheros de tests.
 Editando este target puedes cambiar el número de test generados y la complejidad
 de cada uno de ellos (el número de elementos de entrada, por ejemplo).
   * `make <extension>`.
@@ -128,3 +148,9 @@ dejará solo aquellos creados manualmente.
 También puedes usar este target para borrar los ficheros resultantes de una
 compilación (si el lenguaje que estás usando es compilado :).
 
+Ese es el funcionamiento básico, ¡con esto tienes diversión para rato!
+Siéntete libre de jugar con los comandos y probar nuevas cosas.
+Si encuentras algún error o quieres aportar una mejora no dudes en crear un
+issue en este repositorio.
+Una buena forma de aportar mejoras es incluir implementaciones en otros
+lenguajes :)

@@ -1,1 +1,13 @@
+# Ignore randomly generated tests.
+**/tests/random*
+
+# Ignore compiled files.
+main
+solver
+
+# Virtual environment folders.
 venv/
+.venv/
+
+# Vim files.
+.vim/

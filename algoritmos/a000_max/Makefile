@@ -21,7 +21,7 @@ clean:
 	rm -f $(FILENAME)
 
 
-generate: clean
+tests: clean
 	@echo "Generating test i/o files"
 	mkdir -p $(TEST_DIR)
 	
