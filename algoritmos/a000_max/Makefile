@@ -26,8 +26,8 @@ generate: clean
 	mkdir -p $(TEST_DIR)
 	
 	@echo "Generating big example to test efficiency"
-	python generator.py $(BIG_EXAMPLE) $(SEED) > $(TEST_DIR)/sample_$(BIG_EXAMPLE).in
-	cat $(TEST_DIR)/sample_$(BIG_EXAMPLE).in | python solver.py > $(TEST_DIR)/sample_$(BIG_EXAMPLE).out
+	python generator.py $(BIG_EXAMPLE) $(SEED) > $(TEST_DIR)/random-big-$(BIG_EXAMPLE).in
+	cat $(TEST_DIR)/random-big-$(BIG_EXAMPLE).in | python solver.py > $(TEST_DIR)/random-big-$(BIG_EXAMPLE).out
 	
 	@echo "Generating a bunch of random samples"
 	oj generate-input "python generator.py" $(RANDOM_SAMPLES) -d $(TEST_DIR)
