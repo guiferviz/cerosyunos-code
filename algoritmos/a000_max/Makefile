@@ -26,7 +26,7 @@ tests: clean
 	mkdir -p $(TEST_DIR)
 	
 	@echo "Generating big example to test efficiency"
-	python generator.py $(BIG_EXAMPLE) $(SEED) > $(TEST_DIR)/random-big-$(BIG_EXAMPLE).in
+	python generator.py --n-numbers $(BIG_EXAMPLE) --seed $(SEED) > $(TEST_DIR)/random-big-$(BIG_EXAMPLE).in
 	cat $(TEST_DIR)/random-big-$(BIG_EXAMPLE).in | python solver.py > $(TEST_DIR)/random-big-$(BIG_EXAMPLE).out
 	
 	@echo "Generating a bunch of random samples"
