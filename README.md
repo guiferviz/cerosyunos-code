@@ -112,7 +112,7 @@ en él.
 ```
 $ cd algoritmos/a000_max/
 $ ls
-generate.sh  generator.py  main.cpp  main.py  README.md  run.sh  solver.cpp  solver.py  tests
+generate.sh  generator.py  main.cpp  main.py  README.adoc  run.sh  solver.cpp  solver.py  tests
 ```
 
 Aunque no todos los algoritmos/problemas tendrán exactamente la misma
