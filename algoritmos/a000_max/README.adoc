@@ -1,0 +1,53 @@
+= Algoritmo 000 - Máximo
+Ceros y Unos
+:sectnums:
+:toc: left
+:toclevels: 3
+:icons: font
+:stem: latexmath
+:source-highlighter: rouge
+
+
+Obtener el número máximo de una lista de números es algo muy básico, pero
+puede suponer un reto para aquellos no familiarizados con el mundo de la
+programación.
+Veamos qué tal se te da el asunto :)
+
+En este problema tienes una lista de números como entrada y tu programa debe
+devolver el número máximo.
+Por ejemplo, data la lista \$a = [3, 0, 1, 5]\$, el número máximo es el \$5\$.
+
+
+== Entrada esperada
+
+La primera línea de entrada contiene un número entero \$t\$, el número de casos
+de ejemplo. Por cada caso tenemos 2 líneas de entrada.
+
+La primera línea del test es un número entero \$n\$, la longitud de la
+lista.
+La segunda línea del test contiene una lista \$a\$ de enteros positivos:
+\$a_1, a_2, \cdots, a_{n-1}(0 \leq a_i \le 2147483648)\$, donde \$a_i\$ es el
+elemento \$i\$ de la lista \$a\$.
+
+
+== Salida esperada
+
+Por cada caso de ejemplo se espera una línea con el número máximo.
+
+
+== Ejemplo
+
+Entrada:
+```
+2
+4
+3 0 1 5
+9
+1 2 3 4 5 6 7 8 9
+```
+
+Salida esperada:
+```
+5
+9
+```
