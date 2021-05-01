@@ -2,16 +2,9 @@ ifdef::env-github[]
 Read this page in https://guiferviz.com/cerosyunos-code/algoritmos/a000-max/
 endif::[]
 
-== Algoritmo 000 - Máximo
-include::../../_include/subtitle.adoc[]
-
+= Algoritmo 000 - Máximo
 ifndef::env-github[]
-:sectnums:
-:toc: left
-:toclevels: 3
-:icons: font
-:stem: latexmath
-:source-highlighter: rouge
+include::../../_include/subtitle.adoc[]
 endif::[]
 
 
@@ -25,7 +18,7 @@ devolver el número máximo.
 Por ejemplo, data la lista \$a = [3, 0, 1, 5]\$, el número máximo es el \$5\$.
 
 
-=== Entrada esperada
+== Entrada esperada
 
 La primera línea de entrada contiene un número entero \$t\$, el número de casos
 de ejemplo. Por cada caso tenemos 2 líneas de entrada.
@@ -37,12 +30,12 @@ La segunda línea del test contiene una lista \$a\$ de enteros positivos:
 elemento \$i\$ de la lista \$a\$.
 
 
-=== Salida esperada
+== Salida esperada
 
 Por cada caso de ejemplo se espera una línea con el número máximo.
 
 
-=== Ejemplo
+== Ejemplo
 
 Entrada:
 ```
