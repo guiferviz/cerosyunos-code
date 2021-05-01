@@ -4,6 +4,7 @@ endif::[]
 
 = Algoritmo 001 - Mínimo
 include::../../_include/subtitle.adoc[]
+
 ifndef::env-github[]
 :sectnums:
 :toc: left
