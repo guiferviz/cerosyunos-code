@@ -39,7 +39,7 @@ elemento \$i\$ de la lista \$a\$.
 
 == Salida esperada
 
-Por cada caso de ejemplo se espera una línea con el número máximo.
+Por cada caso de ejemplo se espera una línea con el número mínimo.
 
 
 == Ejemplo
