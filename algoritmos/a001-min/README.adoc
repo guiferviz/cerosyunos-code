@@ -2,7 +2,7 @@ ifdef::env-github[]
 Read this page in https://guiferviz.com/cerosyunos-code/algoritmos/a001-min/
 endif::[]
 
-== Algoritmo 001 - Mínimo
+= Algoritmo 001 - Mínimo
 ifndef::env-github[]
 include::../../_include/subtitle.adoc[]
 endif::[]
@@ -18,7 +18,7 @@ devolver el número mínimo.
 Por ejemplo, data la lista \$a = [3, 0, 1, 5]\$, el número mínimo es el \$0\$.
 
 
-=== Entrada esperada
+== Entrada esperada
 
 La primera línea de entrada contiene un número entero \$t\$, el número de casos
 de ejemplo. Por cada caso tenemos 2 líneas de entrada.
@@ -30,12 +30,12 @@ La segunda línea del test contiene una lista \$a\$ de enteros positivos:
 elemento \$i\$ de la lista \$a\$.
 
 
-=== Salida esperada
+== Salida esperada
 
 Por cada caso de ejemplo se espera una línea con el número mínimo.
 
 
-=== Ejemplo
+== Ejemplo
 
 Entrada:
 ```
