@@ -3,14 +3,14 @@ Read this page in https://guiferviz.com/cerosyunos-code/algoritmos/a000-max/
 endif::[]
 
 = Algoritmo 000 - Máximo
-include::../../_include/subtitle.adoc[]
+ifndef::env-github[]
 :sectnums:
 :toc: left
 :toclevels: 3
 :icons: font
 :stem: latexmath
 :source-highlighter: rouge
-
+endif::[]
 
 
 Obtener el número máximo de una lista de números es algo muy básico, pero

@@ -3,6 +3,7 @@ Read this page in https://guiferviz.com/cerosyunos-code/algoritmos/a001-min/
 endif::[]
 
 = Algoritmo 001 - Mínimo
+include::../../_include/subtitle.adoc[]
 ifndef::env-github[]
 :sectnums:
 :toc: left
