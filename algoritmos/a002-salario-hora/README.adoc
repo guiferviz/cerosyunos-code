@@ -1,0 +1,51 @@
+ifdef::env-github[]
+Read this page in https://guiferviz.com/cerosyunos-code/algoritmos/a001-salario-hora/
+endif::[]
+
+= Algoritmo 002 - Salario anual a salario por hora
+ifndef::env-github[]
+include::../../_include/subtitle.adoc[]
+endif::[]
+
+
+Imagina que andas buscando empleo. Te encuentras que la mayoría de las ofertas
+hablan del salario anual, sin embargo, tú estás acostumbrado a ver los salarios
+por hora trabajada. Necesitas hacer esa conversión para tener una mejor idea de
+lo que los números significan. ¿Cómo lo harías? Asume que los meses tienen 20
+días de trabajo de 8 horas cada uno.
+
+En este problema tienes un número como entrada, el salario anual de una oferta
+de trabajo, y tu programa debe devolver otro, el salario por hora de dicha
+oferta. Por ejemplo, dado el salario anual \$s = 19200\$, el salario por hora
+es \$10\$.
+
+
+== Entrada esperada
+
+La primera línea de entrada contiene un número entero \$t\$, el número de casos
+de ejemplo. Por cada caso tenemos una línea entrada.
+
+Esa línea es un número entero \$s\$, el salario anual de una oferta de trabajo.
+
+
+== Salida esperada
+
+Por cada caso de ejemplo se espera una línea con el salario por hora. Los
+números deben estar redondeados de tener siempre dos decimales, incluso si la parte decimal son
+todos ceros.
+
+
+== Ejemplo
+
+Entrada:
+```
+2
+19200
+15360 
+```
+
+Salida esperada:
+```
+10.00
+8.00
+```
