@@ -1,5 +1,5 @@
 ifdef::env-github[]
-Read this page in https://guiferviz.com/cerosyunos-code/algoritmos/a001-salario-hora/
+Read this page in https://guiferviz.com/cerosyunos-code/algoritmos/a002-salario-hora/
 endif::[]
 
 = Algoritmo 002 - Salario anual a salario por hora
