@@ -2,7 +2,7 @@ ifdef::env-github[]
 Read this page in https://guiferviz.com/cerosyunos-code/algoritmos/a000-max/
 endif::[]
 
-= Algoritmo 000 - Máximo
+= Algoritmo 000 - Número Máximo
 ifndef::env-github[]
 include::../../_include/subtitle.adoc[]
 endif::[]
