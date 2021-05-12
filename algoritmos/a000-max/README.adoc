@@ -3,6 +3,7 @@ Read this page in https://guiferviz.com/cerosyunos-code/algoritmos/a000-max/
 endif::[]
 
 = Algoritmo 000 - Máximo
+
 ifndef::env-github[]
 include::../../_include/subtitle.adoc[]
 endif::[]
@@ -26,7 +27,7 @@ de ejemplo. Por cada caso tenemos 2 líneas de entrada.
 La primera línea del test es un número entero \$n\$, la longitud de la
 lista.
 La segunda línea del test contiene una lista \$a\$ de enteros positivos:
-\$a_1, a_2, \cdots, a_{n-1}(0 \leq a_i \le 2147483648)\$, donde \$a_i\$ es el
+\$a_1, a_2, \cdots, a_{n-1}(0 \leq a_i \lt 2147483648)\$, donde \$a_i\$ es el
 elemento \$i\$ de la lista \$a\$.
 
 

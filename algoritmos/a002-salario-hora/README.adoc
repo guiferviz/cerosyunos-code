@@ -3,6 +3,7 @@ Read this page in https://guiferviz.com/cerosyunos-code/algoritmos/a002-salario-
 endif::[]
 
 = Algoritmo 002 - Salario anual a salario por hora
+
 ifndef::env-github[]
 include::../../_include/subtitle.adoc[]
 endif::[]
