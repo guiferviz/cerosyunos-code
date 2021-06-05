@@ -1,0 +1,100 @@
+ifdef::env-github[]
+Read this page in https://www.hackerrank.com/contests/cerosyunos/challenges/is-toeplitz-matrix/problem
+endif::[]
+
+= Problema 001 - ¿Es una matrix de Toeplitz?
+
+ifndef::env-github[]
+include::../../_include/subtitle.adoc[]
+endif::[]
+
+
+Una [matriz de Toeplitz](https://es.wikipedia.org/wiki/Matriz_de_Toeplitz) o
+**matriz de diagonales constantes** es una matriz en la que cada diagonal
+descendente de izquierda a derecha es constante. Aquí constante quiere decir
+que todos los números cada una de las diagonales es exactamente el mismo. Por
+ejemplo, la siguiente matriz es una matriz de Toeplitz:
+
+$$
+  \left[ {\begin{array}{cccc}
+   6 & 3 & 2 & 7 \\\
+   5 & 6 & 3 & 2 \\\
+   9 & 5 & 6 & 3 \\\
+   6 & 9 & 5 & 6 \\\
+  \end{array} } \right]
+$$
+
+Desde la esquina superior derecha hasta la esquina inferior izquierda las diagonales son:
+
+* 7
+* 2, 2
+* 3, 3, 3
+* 6, 6, 6, 6
+* 5, 5, 5
+* 9, 9
+* 6
+
+Las siete diagonales son **constantes**, por lo que la matriz es una matriz de Toeplitz.
+
+La siguiente sin embargo no es una matriz de Toeplitz porque hay dos números distintos
+en la diagonal principal: el $1$ y el $2$.
+
+$$
+  \left[ {\begin{array}{cccc}
+   1 & 2 \\\
+   1 & 2 \\\
+  \end{array} } \right]
+$$
+
+¿Podrías escribir un algoritmo que compruebe de forma eficiente si una matriz es de Toeplitz o no?
+
+
+== Entrada esperada
+
+Dos enteros $n$ y $m$ in la primera línea: representan al número de filas y columnas de la matrix.
+
+Después de la primera línea encontrarás $n$ líneas con $m$ enteros cada una.
+
+
+== Restricciones de entrada
+
+$1 \le n,m \lt 10^3$
+
+$-10^6 \lt A_{i,j} \lt 10^6$
+
+
+== Salida esperada
+
+$1$ si la matrix es de Toeplitz, $0$ si no lo es.
+
+
+== Ejemplo 1
+
+Entrada:
+```
+4 4
+1 2 3 4
+4 1 2 3
+7 4 1 2
+7 7 4 1
+```
+
+Salida esperada:
+```
+1
+```
+
+
+== Ejemplo 2
+
+Entrada:
+```
+2 2
+1 2
+1 2
+```
+
+Salida esperada:
+```
+0
+```
