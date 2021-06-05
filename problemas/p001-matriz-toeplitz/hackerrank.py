@@ -9,6 +9,9 @@ Hackerrank expects tests in a zip following an structure like:
   - input00.txt
   - input01.txt
   - ...
+
+Once you run this script you will have a tests_hackerrank folder that you can
+zip with: `rm -rf tests.zip && zip tests.zip -r tests_hackerrank`
 """
 
 import pathlib
