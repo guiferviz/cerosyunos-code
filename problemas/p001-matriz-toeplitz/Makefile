@@ -27,8 +27,8 @@ tests: clean
 	
 	@echo "Generating big example to test efficiency"
 	python generator.py -r $(BIG_EXAMPLE) -c $(BIG_EXAMPLE) -t 1 --seed $(SEED) > $(TEST_DIR)/random-big-$(BIG_EXAMPLE).in
-	cat $(TEST_DIR)/random-big-$(BIG_EXAMPLE).in | python solver.py > $(TEST_DIR)/random-big-$(BIG_EXAMPLE).out
+	cat $(TEST_DIR)/random-big-$(BIG_EXAMPLE).in | python solucion2.py > $(TEST_DIR)/random-big-$(BIG_EXAMPLE).out
 	
 	@echo "Generating a bunch of random samples"
 	oj generate-input "python generator.py" $(RANDOM_SAMPLES) -d $(TEST_DIR)
-	oj generate-output -c "python solver.py" -d $(TEST_DIR)
+	oj generate-output -c "python solucion2.py" -d $(TEST_DIR)
