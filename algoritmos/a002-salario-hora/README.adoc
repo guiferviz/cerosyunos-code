@@ -23,18 +23,18 @@ es \$10\$.
 
 == Entrada esperada
 
-La primera línea de entrada contiene un número entero \$t\$, el número de casos
+La primera línea de entrada contiene un número entero \$t\$: el número de casos
 de ejemplo. Por cada caso tenemos una línea de entrada.
 
 Esa línea es un número entero \$s\$, el salario anual de una oferta de trabajo.
-El salario anual \$s\$ cumple: \$1000 \le s \lt 10000000\$.
+El salario anual \$s\$ cumple: \$1000 \leq s \lt 10000000\$.
 
 
 == Salida esperada
 
 Por cada caso de ejemplo se espera una línea con el salario por hora. Los
-números deben estar redondeados de tener siempre dos decimales, incluso si la
-parte decimal son todos ceros.
+números deben estar redondeados a dos decimales, incluso si la parte decimal
+son todos ceros.
 
 
 == Ejemplo
